@@ -15,11 +15,11 @@ export default function Hero() {
             Breaking News
           </span>
 
-          <h1 className="text-5xl font-bold mt-4 max-w-3xl">
-            Manchester City Wins Dramatic Champions League Final
-          </h1>
+          <h1 className="text-5xl font-bold mt-4 max-w-3xl text-black"> 
+  Manchester City Wins Dramatic Champions League Final 
+</h1>
 
-          <p className="mt-4 text-lg">
+          <p className="mt-4 text-lg text-black">
             Latest football stories, transfer updates,
             and match analysis from around the world.
           </p>
