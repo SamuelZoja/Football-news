@@ -1,28 +1,63 @@
 import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import NewsCard from "../components/NewsCard";
+import Trending from "../components/Trending";
+
+const news = [
+  {
+    title: "Manchester United Prepare Summer Bid",
+    category: "Transfers",
+    image:
+      "https://images.unsplash.com/photo-1518604666860-9ed391f76460",
+  },
+  {
+    title: "Arsenal Extend Winning Run",
+    category: "Premier League",
+    image:
+      "https://images.unsplash.com/photo-1508098682722-e99c643e7485",
+  },
+  {
+    title: "Barcelona Star Suffers Injury",
+    category: "La Liga",
+    image:
+      "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d",
+  },
+  {
+    title: "Real Madrid Eye Young Talent",
+    category: "Transfers",
+    image:
+      "https://images.unsplash.com/photo-1486286701208-1d58e9338013",
+  },
+];
 
 export default function Home() {
   return (
     <>
       <Navbar />
+      <Hero />
 
-      <main style={{ padding: "20px" }}>
-        <section
-          style={{
-            background: "#f5f5f5",
-            padding: "40px",
-            borderRadius: "10px",
-            textAlign: "center",
-          }}
-        >
-          <h1 style={{ fontSize: "40px", fontWeight: "bold" }}>
-            ARSENAL WIN DRAMATIC FINAL IN THE HERO 🏆
-          </h1>
+      <div className="max-w-7xl mx-auto px-4 py-10">
+        <div className="grid lg:grid-cols-4 gap-8">
+          <div className="lg:col-span-3">
+            <h2 className="text-3xl font-bold mb-6">
+              Latest News
+            </h2>
 
-          <p style={{ marginTop: "10px", fontSize: "18px" }}>
-            Breaking football news and match highlights
-          </p>
-        </section>
-      </main>
+            <div className="grid md:grid-cols-2 gap-6">
+              {news.map((item, index) => (
+                <NewsCard
+                  key={index}
+                  title={item.title}
+                  image={item.image}
+                  category={item.category}
+                />
+              ))}
+            </div>
+          </div>
+
+          <Trending />
+        </div>
+      </div>
     </>
   );
 }

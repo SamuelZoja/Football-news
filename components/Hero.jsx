@@ -4,7 +4,7 @@ export default function Hero() {
       className="relative h-[500px] bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://www.arsenal.com/news/arsenal-reach-100-champions-league-wins')",
+          "url(https://i.guim.co.uk/img/media/6bcfaa97aeba9f4da605b4f49fc9880d4ef039f5/0_0_3200_2009/master/3200.jpg?width=465&dpr=1&s=none&crop=none",
       }}
     >
       <div className="absolute inset-0 bg-black/60" />
@@ -16,7 +16,7 @@ export default function Hero() {
           </span>
 
           <h1 className="text-5xl font-bold mt-4 max-w-3xl">
-            Arsenal Wins Dramatic Champions League Final
+            ARSENAL WIN DRAMATIC FINAL IN THE HERO 🏆
           </h1>
 
           <p className="mt-4 text-lg">
